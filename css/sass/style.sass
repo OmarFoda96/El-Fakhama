@@ -1,0 +1,164 @@
+@import "../css/gallery-grid.css"
+$mainColor:#E9E0DB
+$secondColor:#FFFAF4
+$thirdColor:#C8BFB6
+$spanColor:#FFA601
+$captionSmallColor:#FFDB0E
+$carFont:'Paytone One', sans-serif
+$mainFont:'Open Sans', sans-serif
+$fullWidth:97%
+%oddSection
+    background-color: $mainColor
+    padding: 50px 0px
+%evenSection
+    background-color: $secondColor
+    padding: 50px 0px
+    height: auto
+
+%titles
+    font-size: 55px
+    font-family: $mainFont
+    font-weight: bolder
+    padding-bottom: 30px
+
+*
+    margin: 0px
+    padding: 0px
+   
+//start navbar
+.bg-dark
+    background-color: rgba(0,0,0,0.5)!important
+    font-family: $mainFont
+.navbar-dark
+     .navbar-nav
+          .nav-link
+              color: #fff
+//end navbar
+//start carousel
+.carousel-caption
+    h2
+        font-family: $carFont
+        font-size: 50px
+        span 
+            color: $captionSmallColor
+    p
+        color: $spanColor
+        font-size: 30px
+        font-family: $mainFont
+        font-weight: light
+//end carousel
+
+//start services section
+.services
+    @extend %oddSection
+.titles
+    @extend %titles
+.service
+    // width:$fullWidth
+    display: flex
+.serviceKit
+    background-color: $thirdColor
+    margin: 0px 50px
+    // width: $fullWidth / 3
+    padding: 30px 10px
+    margin-bottom: 10px
+    .fontAwe 
+        background-color: #ffffff
+        width: 120px
+        height: 120px
+        border-radius: 50%
+        text-align: center
+        // margin-left: 30%
+        i
+            margin-top: 25%
+       
+//end services section
+
+//start gallery
+.gallery
+    @extend %evenSection
+.galleryImg
+    overflow-x: hidden
+//end gallery
+
+#map
+    iframe
+        height: 50vh
+        width: 100%
+        border: 0px
+    .col
+        padding-right: 0px
+        padding-left: 0px
+
+footer
+    background-color: $secondColor
+    padding: 50px 0px
+ul 
+  list-style-type: none
+a
+    text-decoration: none
+    color: black
+    &:hover
+        color: #909090
+        text-decoration: none
+
+//start media query
+@media (max-width: 318px)
+    .h1
+        font-size: 45px
+    .sss
+        font-size: 23px
+        color: black
+        a
+            font-size: 18px
+            font-weight: 600
+    .smsm
+        margin-top: 50px
+@media (min-width: 318.89px) and (max-width: 478px)
+    .h1
+        font-size: 50px
+    .sss
+        font-size: 25px
+        color: black
+        a
+            font-size: 22px
+            font-weight: 600
+    // footer
+    //     a
+    //         font-size: 12px
+    .smsm
+        margin-top: 50px
+    
+@media (min-width: 478.89px) and (max-width: 569px)
+    .sss
+        font-size: 20px
+        color: black
+        a
+            font-size: 16px
+            font-weight: 600
+    .smsm
+        margin-top: 0px
+@media (min-width: 569.89px) and (max-width: 575.98px) 
+    .h1
+        font-size: 45px
+    .small
+        font-size: 20px
+        font-weight: 600
+    .smsm
+        margin-top: 50px
+@media (min-width: 576px) and (max-width: 767.98px)
+    .sss
+        font-size: 22px
+        color: black
+        a
+            font-weight: 600
+@media (min-width: 768px) and (max-width: 991.98px)
+    .sss
+        font-size: 24px
+        color: black
+        a
+           font-weight: 600
+    footer
+        a
+            font-size: 11px
+//end media query

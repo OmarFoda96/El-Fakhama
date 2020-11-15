@@ -1,0 +1,39 @@
+.tz-gallery .lightbox img {
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 10px;
+    /* box-shadow: 0 2px 3px rgba(0,0,0,0.2); */
+    height: 100%;
+}
+
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.tz-gallery img {
+    border-radius: 1px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+.tz-gallery .col-lg-3,.tz-gallery .col-xs-12{
+    padding-right: 0px;
+    padding-left: 0px
+}
+.tz-gallery{
+    padding-bottom: 30px;
+}
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
